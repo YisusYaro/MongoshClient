@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+
+  mongo-service:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    container_name: mongo-container
+    volumes:
+      - ./:/app
+    stdin_open: true
